@@ -1,0 +1,253 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.close{
+  align: right;
+  text-align: right;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+#date-time {
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+@keyframes nav-animation{
+    from {opacity: 1;}
+    to {opacity: 0.65;}
+}
+
+nav {
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: block;
+    white-space: nowrap;
+    animation-name: nav-animation;
+    animation-duration: 6s;
+    margin:  30px 30px 0 30px;
+}
+
+html, body, #map {
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#loadingMap {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: block;
+    opacity: 0.7;
+    z-index: 99;
+    text-align: center;
+}
+
+#loadingGif {
+    position: absolute;
+    top: 100px;
+    left: 240px;
+    z-index: 100;
+  }
+
+  #btnInfo {
+    position: absolute;
+    margin-left: 370;
+
+}
+
+#issPass {
+    font-weight: bold;
+}
+
+#selectCountry {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#btnDiv {
+    opacity: 0.65;
+    display: flex;
+    white-space: nowrap;
+    position: right;
+    padding: 1px;
+  	flex-wrap: nowrap;
+}
+
+/* ------------------------------------ */
+
+#apiCont {
+    display: grid;
+    grid-row-gap: 20px;
+}
+
+.api {
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+
+.api-main-title {
+    padding: 10px 15px;
+    background-color: dimgray;
+    color: white;
+}
+
+.api-main-note {
+    color: grey;
+    font-size: 18px;
+    line-height: 15px;
+    padding: 0px 10px 15px 15px;
+}
+
+.api-container {
+    display: inline-grid;
+    grid-row-gap: 3px;
+    width: 30%;
+    padding: 10px 15px;
+}
+
+.api-container.wide {
+    width: 50%;
+}
+
+.api-container.full {
+    width: 100%;
+}
+
+.api-title {
+    font-weight: 600;
+    color: #000000;
+}
+
+.api-note {
+    color: grey;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+.api-image {
+    width: 100%;
+    height: auto;
+}
+
+.api-link {
+    font-size: 16px;
+}
+
+/* ------------------------------------ */
+
+.news_item a {
+    color: white;
+    text-decoration: none;
+}
+
+.news_item {
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    height: 220px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 10%, rgba(0,15,18,1) 19%, rgba(0,212,255,0) 100%), url('https://media.ambito.com/p/ccdfa6f67420b859df7e258c6f2ecaae/adjuntos/239/imagenes/038/344/0038344016/la-brecha-el-dolar-ccl-y-el-mayorista-se-afianza-encima-del-70.jpg');
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.news_title {
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.news_title:hover {
+    text-decoration: underline;
+}
+
+.news_description {
+    color: lightgray;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration: none;
+}
+
+.news_author {
+    position: absolute;
+    bottom: 15px;
+}
+
+/* ------------------------------------ */
+
+.currency {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+}
+
+.currency input {
+    padding: 5px;
+    font-weight: 700;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+}
+
+.currency_divider {
+    width: max-content;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #5d9eff;
+    color: white;
+    padding: 5px 10px 10px 10px;
+    font-weight: 500;
+}
+
+#currency_output {
+    direction: rtl;
+}
+
+.borders_list .border {
+    display: inline-block;
+    text-align: center;
+    border: none;
+    width: 10%;
+}
+
+.borders_list .border img {
+    width: 100%;
+}
+
+.borders_title {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+/* ------------------------------------ */
+
+
+
+@media (max-width: 798px) {
+
+    #btnISS, #btnInfo {
+      	padding: 1px;
+		align: center;
+        text-align: center;
+        max-width: 100px;
+    }
+
+  }
